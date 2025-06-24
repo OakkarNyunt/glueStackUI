@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import {  StyleSheet } from 'react-native'
 import { HStack } from "@/components/ui/hstack";
 import { Image } from "expo-image";
 import React from 'react'

@@ -2,15 +2,21 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Image } from "expo-image";
 // import { StyleSheet } from "react-native";
 import { Box } from "@/components/ui/box";
-import { Text } from "@/components/ui/text";
+// import { Text } from "@/components/ui/text";
 // import { Button, ButtonText } from "@/components/ui/button";
 // import { Spinner } from '@/components/ui/spinner';
 import { HStack } from "@/components/ui/hstack";
 import { ShoppingCart } from "lucide-react-native";
 // import { VStack } from "@/components/ui/vstack";
 import { Badge, BadgeText } from "@/components/ui/badge";
+import { FlashList } from "@shopify/flash-list";
 
 import Banner from "@/components/custom/banner";
+import ReuseTitle from "@/components/custom/reuseTitle";
+import Cate_data from "@/components/custom/cate_data";
+// import { FlatList } from "react-native";
+
+import {data} from "@/constants/cate"
 
 const blurhash =
   "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
@@ -44,11 +50,17 @@ export default function HomeScreen() {
         </Box>
       </HStack>
       <Banner />
-
-      <HStack className=" justify-between px-5">
-        <Text>Shop By Category</Text>
-        <Text>See All</Text>
-      </HStack>
+      <ReuseTitle title="Shop By Category" btn="See All" />
+      
+      <FlashList
+        data={data}
+        renderItem={({item}) => <Cate_data {...item} />}
+        keyExtractor={item => item.id.toString()}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        estimatedItemSize={90}
+      />
     </SafeAreaView>
   );
 }
+
