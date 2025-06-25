@@ -32,7 +32,7 @@ export const data = [
 
 export const product = [
   {
-    id: "1",
+    id: 1,
     category_id: "1",
     brand: "M & W",
     title:
@@ -62,7 +62,7 @@ export const product = [
     
   },
   {
-    id: "2",
+    id: 2,
     category_id: "1",
     brand: "M & W",
     title:
@@ -92,7 +92,7 @@ export const product = [
     
   },
   {
-    id: "3",
+    id: 3,
     category_id: "1",
     brand: "M & W",
     title:
@@ -122,7 +122,7 @@ export const product = [
     
   },
   {
-    id: "4",
+    id: 4,
     category_id: "1",
     brand: "M & W",
     title:
@@ -152,7 +152,7 @@ export const product = [
     ,
   },
   {
-    id: "5",
+    id: 5,
     category_id: "1",
     brand: "M & W",
     title:
@@ -182,7 +182,7 @@ export const product = [
     ,
   },
   {
-    id: "6",
+    id: 6,
     category_id: "1",
     brand: "M & W",
     title:
@@ -212,7 +212,7 @@ export const product = [
     ,
   },
   {
-    id: "7",
+    id: 7,
     category_id: "1",
     brand: "M & W",
     title:
@@ -242,7 +242,7 @@ export const product = [
     
   },
   {
-    id: "8",
+    id: 8,
     category_id: "1",
     brand: "M & W",
     title:
@@ -272,7 +272,7 @@ export const product = [
     
   },
   {
-    id: "9",
+    id: 9,
     category_id: "1",
     brand: "M & W",
     title:
@@ -300,5 +300,35 @@ export const product = [
     description: 
         "Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness"
     
-  }
+  },
+  // {
+  //   id: "10",
+  //   category_id: "1",
+  //   brand: "M & W",
+  //   title:
+  //     "Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness",
+  //   star: 3.5,
+  //   quantity: 136,
+  //   price: 295.3,
+  //   discount: 550,
+  //   image: S8,
+  //   user: [],
+  //   colors: [
+  //     { id: 1, name: "Red", bgColor: "#112211" },
+  //     { id: 2, name: "blue", bgColor: "#ffffff" },
+  //     { id: 3, name: "green", bgColor: "#aaaaaa" },
+  //     { id: 4, name: "purple", bgColor: "#bbbbbb" },
+  //   ],
+  //   sizes: [
+  //     { id: 1, name: "XS", stock: false },
+  //     { id: 2, name: "S", stock: false },
+  //     { id: 3, name: "M", stock: false },
+  //     { id: 4, name: "L", stock: false },
+  //     { id: 5, name: "XL", stock: false },
+  //     { id: 6, name: "XXL", stock: false },
+  //   ],
+  //   description: 
+  //       "Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness Product List & Responsiveness"
+    
+  // }
 ];

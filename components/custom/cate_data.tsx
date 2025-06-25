@@ -12,15 +12,15 @@ type cateProps = {
   name: string;
   image: string;
   select: number;
-  setSelect: (id:number) => void;
+  onSelect: (id:number) => void;
 };
-const CateData = ({ id, name, image,select,setSelect }: cateProps) => {
+const CateData = ({ id, name, image,select,onSelect }: cateProps) => {
   // const [select,setSelect] = useState(1);
   return (
     <HStack className=" my-3 px-3">
       <Pressable 
       className="items-center"
-      onPress={()=>setSelect(id)}
+      onPress={()=>onSelect(id)}
       >
         <Image
           style={[styles.cateImg ,  select === id && styles.clickCate]}
@@ -29,7 +29,7 @@ const CateData = ({ id, name, image,select,setSelect }: cateProps) => {
           contentFit="cover"
           transition={1000}
         />
-        <Text className="text-slate-700">{name}</Text>
+        <Text className="text-gray-500">{name}</Text>
       </Pressable>
     </HStack>
   );
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     borderColor:"red"
   },
   clickCate:{
+    borderColor: "purple",
+    borderWidth: 1,
     
-
   }
 });
