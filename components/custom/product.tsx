@@ -3,10 +3,12 @@ import { Image } from "expo-image";
 import React from "react";
 import { HStack } from "../ui/hstack";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { useRouter } from "expo-router";
+
 
 type Props = {
-  id: number;
-  category_id: number;
+  id: string;
+  category_id: string;
   brand: string;
   title: string;
   star: number;
@@ -23,7 +25,7 @@ type Props = {
 const blurhash =
   "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
 
-const product = ({
+const Product = ({
   id,
   category_id,
   brand,
@@ -39,8 +41,9 @@ const product = ({
   sizes,
   description,
 }: Props) => {
+  const route = useRouter();
   return (
-    <Pressable style={styles.container}>
+    <Pressable style={styles.container} onPress = {() => route.navigate("/detail")}>
       <Image
         style={styles.image}
         source={image}
@@ -76,7 +79,7 @@ const product = ({
   );
 };
 
-export default product;
+export default Product;
 
 const styles = StyleSheet.create({
   container: {

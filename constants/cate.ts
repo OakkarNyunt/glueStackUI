@@ -32,7 +32,7 @@ export const data = [
 
 export const product = [
   {
-    id: 1,
+    id:" 1",
     category_id: "1",
     brand: "M & W",
     title:
@@ -62,7 +62,7 @@ export const product = [
     
   },
   {
-    id: 2,
+    id: "2",
     category_id: "1",
     brand: "M & W",
     title:
@@ -92,7 +92,7 @@ export const product = [
     
   },
   {
-    id: 3,
+    id: "3",
     category_id: "1",
     brand: "M & W",
     title:
@@ -122,7 +122,7 @@ export const product = [
     
   },
   {
-    id: 4,
+    id:" 4",
     category_id: "1",
     brand: "M & W",
     title:
@@ -152,7 +152,7 @@ export const product = [
     ,
   },
   {
-    id: 5,
+    id: "5",
     category_id: "1",
     brand: "M & W",
     title:
@@ -182,7 +182,7 @@ export const product = [
     ,
   },
   {
-    id: 6,
+    id: "6",
     category_id: "1",
     brand: "M & W",
     title:
@@ -212,7 +212,7 @@ export const product = [
     ,
   },
   {
-    id: 7,
+    id: "7",
     category_id: "1",
     brand: "M & W",
     title:
@@ -242,7 +242,7 @@ export const product = [
     
   },
   {
-    id: 8,
+    id: "8",
     category_id: "1",
     brand: "M & W",
     title:
@@ -272,7 +272,7 @@ export const product = [
     
   },
   {
-    id: 9,
+    id: "9",
     category_id: "1",
     brand: "M & W",
     title:
